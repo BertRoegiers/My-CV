@@ -39,7 +39,7 @@ th, td {
   display: flex;
 }
 
-.left-column {
+#left-column {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -51,10 +51,7 @@ th, td {
 }
 
 
-
-
-
-.right-column {
+#right-column {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -68,31 +65,64 @@ th, td {
 
 
 @media only screen and (max-width: 400px) {
+  body {
+      Margin-left: 0px;
+    }
+
+img {
+      Width: 100%;
+      height: auto;
+}
   .container {
       display:flex;
       flex-direction: column-reverse;
       font-size: 65%;
       margin-left: 0px;
-}
+    }
 
-.right-column {
+#right-column {
       width: 100%;
-}
+    }
 
-.left-column {
+#left-column {
       max-width: 100%;
-}
+    }
 
 .credentials {
       max-width: 100%;
       margin-left: 0px;
-}
+    }
 
 .title-left {
       text-align: center;
-}
+    }
 
 title-right {
       text-align: center;
+    }
 }
+
+.skills {
+      text-align: center;
+}
+
+.workexp {
+      text-align: center;
+}
+
+
+@media only screen and (min-width: 400px) and (max-width: 768px) {
+
+body {
+    font-size: 85%;
+    margin-left: 25px;
+  }
+
+.title-left {
+    text-align: center;
+  }
+
+.title-right {
+    text-align: center;
+  }
 }
