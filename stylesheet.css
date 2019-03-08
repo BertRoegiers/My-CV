@@ -1,128 +1,147 @@
 
-body {
-  margin-left:50px;
-  font-family: Arial, sans-serif;
-}
+    body {
+      margin-left:50px;
+      font-family: Arial, sans-serif;
+    }
 
-h1 {
-  text-align: center;
-  font-size: 50px;
-}
+    h1 {
+      text-align: center;
+      font-size: 50px;
+    }
 
-img {
-  width: 50%;
-  height: auto;
-  display: block;
-  margin-top: 75px;
-  margin-left: auto;
-  margin-right: auto;
-}
+    img {
+      width: 50%;
+      height: auto;
+      display: block;
+      margin-top: 75px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-.title-left {
-  font-size: 30px;
-  font-weight: bold;
-}
+    .title-left {
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+    }
 
-.title-right {
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-}
-
-
-th, td {
-  padding-left: 50px;
-}
-
-.container {
-  width: 100%;
-  display: flex;
-}
-
-#left-column {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-}
-
-.school .skills .workexp  {
-  display:flex;
-  flex-direction: column;
-}
+    .title-right {
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+    }
 
 
-#right-column {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-}
+    th, td {
+      padding-left: 50px;
+    }
 
-.credentials {
-  display: flex;
-  flex-direction: column;
-}
+    .container {
+      width: 100%;
+      display: flex;
+    }
+
+    #left-column {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .school, .skills, .workexp  {
+      display:flex;
+      flex-direction: column;
+    }
+
+
+    #right-column {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .credentials {
+      display: flex;
+      flex-direction: column;
+    }
 
 
 
 @media only screen and (max-width: 400px) {
-  body {
-      Margin-left: 0px;
+
+    body {
+      margin-left: 0px;
     }
 
-img {
+    img {
       Width: 100%;
       height: auto;
-}
-  .container {
+    }
+    .container {
       display:flex;
       flex-direction: column-reverse;
       font-size: 65%;
       margin-left: 0px;
     }
 
-#right-column {
+    #right-column {
       width: 100%;
     }
 
-#left-column {
-      max-width: 100%;
+    #left-column {
+      width: 100%;
     }
 
-.credentials {
+    .credentials {
       max-width: 100%;
       margin-left: 0px;
     }
 
-.title-left {
+    .title-left {
       text-align: center;
     }
 
-title-right {
+    title-right {
+      text-align: center;
+    }
+
+    .school {
+      text-align: center;
+    }
+
+
+    .skills {
+      text-align: center;
+    }
+
+    .workexp {
       text-align: center;
     }
 }
-
-.skills {
-      text-align: center;
-}
-
-.workexp {
-      text-align: center;
-}
-
 
 @media only screen and (min-width: 400px) and (max-width: 768px) {
 
-body {
-    font-size: 85%;
-    margin-left: 25px;
-  }
 
-.title-left {
-    text-align: center;
-  }
+    body {
+      margin-left: 0px;
+    }
 
-.title-right {
-    text-align: center;
-  }
+    .container {
+      font-size: 75%;
+      margin-left: 0px;
+    }
+
+    #right-column {
+      width: 100%;
+    }
+
+    #left-column {
+      width: 100%;
+    }
+
+    .title-left {
+      text-align: center;
+    }
+
+    .title-right {
+      text-align: center;
+    }
 }
